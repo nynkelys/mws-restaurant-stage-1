@@ -2,44 +2,54 @@
 /* CSS Document */
 
 body,td,th,p{
-	font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	color: #333;
 	line-height: 1.5;
 }
 body {
+  max-width: 100%;
 	background-color: #fdfdfd;
 	margin: 0;
 	position:relative;
 }
 ul, li {
-	font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	color: #333;
 }
 a {
-	color: orange;
+  max-width: 100%;
+  color: orange;
 	text-decoration: none;
 }
 a:hover, a:focus {
-	color: #3397db;
+  max-width: 100%;
+  color: #3397db;
 	text-decoration: none;
 }
 a img{
+  max-width: 100%;
 	border: none 0px #fff;
 }
 h1, h2, h3, h4, h5, h6 {
+  max-width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
 }
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  max-width: 100%;
 	display: block;
 }
 #maincontent {
+  max-width: 100%;
   background-color: #f3f3f3;
   min-height: 100%;
 }
 #footer {
+  max-width: 100%;
   background-color: #444;
   color: #aaa;
   font-size: 8pt;
@@ -50,15 +60,18 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 /* ====================== Navigation ====================== */
 nav {
+  max-width: 100%;
   width: 100%;
   height: 80px;
   background-color: #252831;
   text-align:center;
 }
 nav h1 {
+  max-width: 100%;
   margin: auto;
 }
 nav h1 a {
+  max-width: 100%;
   color: #fff;
   font-size: 14pt;
   font-weight: 200;
@@ -99,18 +112,25 @@ nav h1 a {
 }
 /* ====================== Map ====================== */
 #map {
+  max-width: 100%;
   height: 400px;
   width: 100%;
   background-color: #ccc;
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
+  max-width: 100%;
   width: 100%;
   height: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: #3397DB;
   align-items: center;
+  display: flex; /* Turn into flex box */
+  flex-flow: row wrap; /* Horizontal wrap */
 }
 .filter-options h2 {
+  max-width: 100%;
   color: white;
   font-size: 1rem;
   font-weight: normal;
@@ -118,6 +138,7 @@ nav h1 a {
   margin: 0 20px;
 }
 .filter-options select {
+  max-width: 100%;
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
@@ -131,6 +152,7 @@ nav h1 a {
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
+  max-width: 100%;
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
@@ -142,24 +164,26 @@ nav h1 a {
   align-content: space-around;
 }
 #restaurants-list li {
+  max-width: 100%;
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
   margin: 15px;
-  min-height: 380px;
+  min-height: 180px;
   padding: 0 30px 25px;
   text-align: left;
   width: 270px;
 }
 #restaurants-list .restaurant-img {
+  max-width: 100%;
   background-color: #ccc;
-  display: block;
   margin: 0;
   max-width: 100%;
   min-height: 248px;
   min-width: 100%;
 }
 #restaurants-list li h1 {
+  max-width: 100%;
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -170,10 +194,12 @@ nav h1 a {
   text-transform: uppercase;
 }
 #restaurants-list p {
+  max-width: 100%;
   margin: 0;
   font-size: 11pt;
 }
 #restaurants-list li a {
+  max-width: 100%;
   background-color: orange;
   border-bottom: 3px solid #eee;
   color: #fff;
@@ -188,12 +214,14 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
+  max-width: 100%;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
 .inside #map-container {
+  max-width: 100%;
   background: blue none repeat scroll 0 0;
   height: 87%;
   position: fixed;
@@ -202,16 +230,19 @@ nav h1 a {
   width: 50%;
 }
 .inside #map {
+  max-width: 100%;
   background-color: #ccc;
   height: 100%;
   width: 100%;
 }
 .inside #footer {
+  max-width: 100%;
   bottom: 0;
   position: absolute;
   width: 50%;
 }
 #restaurant-name {
+  max-width: 100%;
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 20pt;
@@ -222,13 +253,16 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
+  max-width: 100%;
 	width: 90%;
 }
 #restaurant-address {
+  max-width: 100%;
   font-size: 12pt;
   margin: 10px 0px;
 }
 #restaurant-cuisine {
+  max-width: 100%;
   background-color: #333;
   color: #ddd;
   font-size: 12pt;
@@ -241,15 +275,18 @@ nav h1 a {
 	width: 90%;
 }
 #restaurant-container, #reviews-container {
+  max-width: 100%;
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
   width: 50%;
 }
 #reviews-container {
+  max-width: 100%;
   padding: 30px 40px 80px;
 }
 #reviews-container h2 {
+  max-width: 100%;
   color: #f58500;
   font-size: 24pt;
   font-weight: 300;
@@ -257,13 +294,14 @@ nav h1 a {
   padding-bottom: 1pt;
 }
 #reviews-list {
+  max-width: 100%;
   margin: 0;
   padding: 0;
 }
 #reviews-list li {
+  max-width: 100%;
   background-color: #fff;
-    border: 2px solid #f3f3f3;
-  display: block;
+  border: 2px solid #f3f3f3;
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
@@ -272,8 +310,10 @@ nav h1 a {
   width: 85%;
 }
 #reviews-list li p {
+  max-width: 100%;
   margin: 0 0 10px;
 }
 #restaurant-hours td {
+  max-width: 100%;
   color: #666;
 }

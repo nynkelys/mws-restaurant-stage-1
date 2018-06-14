@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) {
+	.filter-options { /* Filter options change to column layout when on small viewport */
+		display: flex;
+		flex-flow: column nowrap;
+		height: 130px;
+	}
+	#restaurants-list li {
+		height: 270px;
+	}
+	#restaurants-list li h1 {
+		font-size: 30px;;
+	}
+	#restaurants-list p {
+		font-size: 20px;
+
+	}
+	#restaurants-list li a {
+		font-size: 20px;
+	}
+	#restaurants-list li img {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	nav h1 a {
+		font-size: 35px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	#restaurants-list {
+		width: 1280px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}

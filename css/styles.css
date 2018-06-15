@@ -292,4 +292,10 @@
   #restaurant-hours td {
     color: #666;
   }
-
+ .skip {
+    position: absolute;
+    top: -40px;
+  }
+  .skip:focus {
+    top: 0;
+  }

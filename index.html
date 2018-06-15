@@ -10,26 +10,26 @@
 	<title>Restaurant Reviews</title>
 </head>
 
-<body tabindex="-1">
+<body>
 	<header>
 		<nav>
-			<h1><a href="/">Restaurant Reviews</a></h1>
+			<h1><a href="/" tabindex="-1">Restaurant Reviews</a></h1>
 		</nav>
 	</header>
 
-	<main id="maincontent">
-		<a href="#filter" class="skip-link">Skip Google Maps controls"</a>
+	<main id="maincontent" role="main">
+		<a href="#filter" class="skip">Skip Google Maps controls</a>
 		<section id="map-container">
-			<div id="map" role="application"></div>
+			<div id="map" role="application" aria-label="Google Maps window"></div>
 		</section>
 		<section>
-			<div class="filter-options" id="filter" tabindex="0">
-				<label for="selectneighborhoods">Select Neighborhoods</label>
-				<select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+			<div class="filter-options">
+				<label id="filter" tabindex="0" for="selectneighborhoods">Select Neighborhoods</label>
+				<select id="neighborhoods-select" name="neighborhoods" aria-label="Select Neighborhood" onchange="updateRestaurants()">
 					<option value="all">All Neighborhoods</option>
 				</select>
 				<label for="selectcuisines">Select Cuisines</label>
-				<select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+				<select id="cuisines-select" name="cuisines" aria-label="Select Cuisine" onchange="updateRestaurants()">
 					<option value="all">All Cuisines</option>
 				</select>
 			</div>

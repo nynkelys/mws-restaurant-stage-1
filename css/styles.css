@@ -104,7 +104,7 @@
       text-decoration: underline;
   }
   /* ====================== Map ====================== */
-  #map {
+  *[role="application"] {
     height: 400px;
     width: 100%;
     background-color: #ccc;

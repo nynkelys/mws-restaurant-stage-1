@@ -32,7 +32,10 @@
 	}
 	.inside #map-container {
 		width: 50%;
+		height: 25%;
+		margin-top: 135px;
 		order: 2;
+		right: 0;
 	}
 	.inside #restaurant-container {
 		width: 50%;

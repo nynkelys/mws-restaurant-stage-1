@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
-	.filter-options { /* Filter options change to column layout when on small viewport */
+	*[role="form"] { /* Filter options change to column layout when on small viewport */
 		display: flex;
 		flex-flow: column nowrap;
 		height: 130px;

@@ -60,10 +60,19 @@ self.addEventListener('fetch', function(event) { // Performs normal browser fetc
     	caches.match(event.request)
     	.then(function(response) { // Match request with what is in cache
       		return response || fetch(event.request);
-    	}).then(function(response) { // Response we get back from network
-    		if (response.status == 404) { // If response is 404: Not found (page does not exist)
-    			return new Response("Whoops, this page does not exist!"); // Respond with this message
-    		}
     	})
+    	// Wanted to add 404: Page not found here
   	);
 });
+
+// 	QUESTION FOR REVIEWER:
+// I wanted to add a 404: Page not found message in line 64.
+// This works, except for the fact that in online mode, the homepage loads just fine, but the restaurant pages won't load anymore.
+// Error message: "The FetchEvent for "<URL>" resulted in a network error response: the promise was rejected."
+// Why is this?
+// This was my code:
+// .then(function(response) {
+//		if (response.status == 404) {
+//		return new Response("Whoops, this page does not exist!");
+//		}
+// })

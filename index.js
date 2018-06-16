@@ -1,4 +1,4 @@
-let staticCacheName = 'mws-restaurant-v3';
+let staticCacheName = 'mws-restaurant-v1';
 
 self.addEventListener('install', function(event) {
   	event.waitUntil( // Signal process of install
@@ -51,7 +51,7 @@ self.addEventListener('fetch', function(event) { // Performs normal browser fetc
 	if (requestUrl.origin === location.origin) { // Check if request origin is same as current origin (we only want to intercept route requests for same origin)
 		if (requestUrl.pathname === '/') { // Check pathname - if it's the route, respond with
 			event.respondWith( // Search for match in caches for this particular request (if there is nothing, promise = undefined)
-			caches.match(event.request)); // The data straight from the cache
+			caches.match(event.request)) // The data straight from the cache
 			return; // No need to go back to network, as data is cached as part of install step
 		};
 	}

@@ -1,10 +1,11 @@
-let staticCacheName = 'mws-restaurant-v20';
+let staticCacheName = 'mws-restaurant-v3';
 
 self.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open(staticCacheName).then(function(cache) { // Update cache name
-      return cache.addAll([
-			"./", // /skeleton?
+  	event.waitUntil( // Signal process of install
+    	caches.open(staticCacheName) // Pass promise: if/when it resolves, the browser knows install is complete, when it fails, service worker should be discarded
+    	.then(function(cache) { // Update cache name
+      	return cache.addAll([ // addAll also returns promise, so I return it
+			"./",
 			"./indexController.js",
 			"index.html",
 			"restaurant.html",
@@ -24,9 +25,9 @@ self.addEventListener('install', function(event) {
 			"img/8.jpg",
 			"img/9.jpg",
 			"img/10.jpg"
-		]);
-    })
-  );
+			]);
+    	})
+  	);
 });
 
 self.addEventListener('activate', function(event) {
@@ -49,20 +50,19 @@ self.addEventListener('fetch', function(event) { // Performs normal browser fetc
 
 	if (requestUrl.origin === location.origin) { // Check if request origin is same as current origin (we only want to intercept route requests for same origin)
 		if (requestUrl.pathname === '/') { // Check pathname - if it's the route, respond with
-			event.respondWith( // Response to all requests
+			event.respondWith( // Search for match in caches for this particular request (if there is nothing, promise = undefined)
 			caches.match(event.request)); // The data straight from the cache
 			return; // No need to go back to network, as data is cached as part of install step
 		};
 	}
 
-	// REVIEWER: why is this code below necessary? Isn't this handled in the if-statement above?
 	event.respondWith( // Tells browser we will handle response to all requests ourselves
     	caches.match(event.request)
     	.then(function(response) { // Match request with what is in cache
       		return response || fetch(event.request);
-    	}).then(function(response) {
-    		if (response.status == 404) {
-    			return new Response("Whoops, this page does not exist!");
+    	}).then(function(response) { // Response we get back from network
+    		if (response.status == 404) { // If response is 404: Not found (page does not exist)
+    			return new Response("Whoops, this page does not exist!"); // Respond with this message
     		}
     	})
   	);

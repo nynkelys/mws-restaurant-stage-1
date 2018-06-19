@@ -16,13 +16,11 @@ gulp.task('responsive', function() {
 			[
 			{
 				width: 200,
-				quality: 50,
 				rename: {
 					suffix: '-200'
 				}
 			}, {
 				width: 500,
-				quality: 50,
 				rename: {
 					suffix: '-500'
 				}

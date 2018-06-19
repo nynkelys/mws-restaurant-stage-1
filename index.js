@@ -24,7 +24,27 @@ self.addEventListener('install', function(event) {
 			"img/7.jpg",
 			"img/8.jpg",
 			"img/9.jpg",
-			"img/10.jpg"
+			"img/10.jpg",
+			"img/1-200.jpg",
+			"img/2-200.jpg",
+			"img/3-200.jpg",
+			"img/4-200.jpg",
+			"img/5-200.jpg",
+			"img/6-200.jpg",
+			"img/7-200.jpg",
+			"img/8-200.jpg",
+			"img/9-200.jpg",
+			"img/10-200.jpg",
+			"img/1-500.jpg",
+			"img/2-500.jpg",
+			"img/3-500.jpg",
+			"img/4-500.jpg",
+			"img/5-500.jpg",
+			"img/6-500.jpg",
+			"img/7-500.jpg",
+			"img/8-500.jpg",
+			"img/9-500.jpg",
+			"img/10-500.jpg"
 			]);
     	})
   	);

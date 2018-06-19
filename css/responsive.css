@@ -4,9 +4,6 @@
 		flex-flow: column nowrap;
 		height: 130px;
 	}
-	#restaurants-list li {
-		height: 270px;
-	}
 	#restaurants-list li h1 {
 		font-size: 30px;;
 	}
@@ -16,9 +13,6 @@
 	}
 	#restaurants-list li a {
 		font-size: 20px;
-	}
-	#restaurants-list li img {
-		display: none;
 	}
 }
 
@@ -30,18 +24,18 @@
 		display: flex;
 		flex-flow: column wrap;
 	}
-	.inside #map-container {
+	.inside #map-container { /* Doesn't work yet */
 		width: 50%;
 		height: 25%;
 		margin-top: 135px;
 		order: 2;
 		right: 0;
 	}
-	.inside #restaurant-container {
+	.inside #restaurant-container { /* Doesn't work yet */
 		width: 50%;
 		order: 1;
 	}
-	.inside #reviews-container {
+	.inside #reviews-container { /* Doesn't work yet */
 		order: 3;
 	}
 }

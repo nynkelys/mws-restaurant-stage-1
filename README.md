@@ -21,7 +21,7 @@ Images compressed using [gulp](https://gulpjs.com/) and [gulp-responsive](https:
 
 ## Bugs
 
-Responsiveness of map on restaurant page.
+No known bugs.
 
 ## Contributing
 

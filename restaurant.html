@@ -21,7 +21,7 @@
     </nav>
     <a href="#filterTwo" class="skip">Skip Google Maps controls</a>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb">
+    <ul id="breadcrumb" role="navigation" aria-label="Navigation to go back to homepage">
       <li><a href="/" role="navigation" aria-label="Go back to home">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -31,25 +31,27 @@
 
   <!-- Beginning main -->
   <main id="maincontent">
-    <!-- Beginning restaurant -->
-    <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
-      <img id="restaurant-img">
-      <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
-    </section>
-    <!-- end restaurant -->
-    <!-- Beginning reviews -->
-    <section id="reviews-container">
+  <section id="restaurant-map-container">
+      <!-- Beginning restaurant -->
+      <section id="restaurant-container">
+        <h1 id="restaurant-name"></h1>
+        <img id="restaurant-img">
+        <p id="restaurant-cuisine"></p>
+        <p id="restaurant-address"></p>
+        <table id="restaurant-hours"></table>
+      </section>
+      <!-- end restaurant -->
+          <!-- Beginning map -->
+      <section id="map-container">
+        <div id="map" role="application" aria-label="Google Maps window"></div>
+      </section>
+      <!-- End map -->
+  </section>
+      <!-- Beginning reviews -->
+      <section id="reviews-container">
       <ul id="reviews-list"></ul>
     </section>
     <!-- End reviews -->
-    <!-- Beginning map -->
-    <section id="map-container">
-      <div id="map" role="application" aria-label="Google Maps window"></div>
-    </section>
-    <!-- End map -->
   </main>
   <!-- End main -->
 

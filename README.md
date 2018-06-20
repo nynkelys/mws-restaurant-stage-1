@@ -1,5 +1,6 @@
 ﻿# Restaurant Reviews App (Stage 1) Project
 Google/Udacity Front End Web Development Nanodegree: Project 6.
+See live preview here: https://nynkelys.github.io/mws-restaurant-stage-1
 
 ## Table of Contents
 

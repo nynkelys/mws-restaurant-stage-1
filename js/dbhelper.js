@@ -191,6 +191,13 @@ class DBHelper {
     return (`${restaurant.srcset_restaurant}`);
   }
 
+  /**
+  * Restaurant image Alt.
+  */
+  static imageAltForRestaurant(restaurant) {
+    return(`${restaurant.alt}`);
+  }
+
 }
 
 

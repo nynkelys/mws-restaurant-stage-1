@@ -6,6 +6,7 @@
     "photograph": "1.jpg",
     "srcset_index": "img/1-200.jpg 300w, img/1-500.jpg 768w, img/1.jpg 1280w",
     "srcset_restaurant": "img/1-200.jpg 300w, img/1-500.jpg 768w, img/1.jpg 1280w",
+    "alt": "Image of Mission Chinese Food restaurant",
     "address": "171 E Broadway, New York, NY 10002",
     "latlng": {
       "lat": 40.713829,
@@ -47,6 +48,7 @@
     "photograph": "2.jpg",
     "srcset_index": "img/2-200.jpg 300w, img/2-500.jpg 768w, img/2.jpg 1280w",
     "srcset_restaurant": "img/2-200.jpg 300w, img/2-500.jpg 768w, img/2.jpg 1280w",
+    "alt": "Image of Emily restaurant",
     "address": "919 Fulton St, Brooklyn, NY 11238",
     "latlng": {
       "lat": 40.683555,
@@ -88,6 +90,7 @@
     "photograph": "3.jpg",
     "srcset_index": "img/3-200.jpg 300w, img/3-500.jpg 768w, img/3.jpg 1280w",
     "srcset_restaurant": "img/3-200.jpg 300w, img/3-500.jpg 768w, img/3.jpg 1280w",
+    "alt": "Image of Kang Ho Dong Baekjeong restaurant",
     "address": "1 E 32nd St, New York, NY 10016",
     "latlng": {
       "lat": 40.747143,
@@ -129,6 +132,7 @@
     "photograph": "4.jpg",
     "srcset_index": "img/4-200.jpg 300w, img/4-500.jpg 768w, img/4.jpg 1280w",
     "srcset_restaurant": "img/4-200.jpg 300w, img/4-500.jpg 768w, img/4.jpg 1280w",
+    "alt": "Image of Katz's Delicatessen restaurant",
     "address": "205 E Houston St, New York, NY 10002",
     "latlng": {
       "lat": 40.722216,
@@ -170,6 +174,7 @@
     "photograph": "5.jpg",
     "srcset_index": "img/5-200.jpg 300w, img/5-500.jpg 768w, img/5.jpg 1280w",
     "srcset_restaurant": "img/5-200.jpg 300w, img/5-500.jpg 768w, img/5.jpg 1280w",
+    "alt": "Image of Roberta's Pizza restaurant",
     "address": "261 Moore St, Brooklyn, NY 11206",
     "latlng": {
       "lat": 40.705089,
@@ -211,6 +216,7 @@
     "photograph": "6.jpg",
     "srcset_index": "img/6-200.jpg 300w, img/6-500.jpg 768w, img/6.jpg 1280w",
     "srcset_restaurant": "img/6-200.jpg 300w, img/6-500.jpg 768w, img/6.jpg 1280w",
+    "alt": "Image of Hometown BBQ restaurant",
     "address": "454 Van Brunt St, Brooklyn, NY 11231",
     "latlng": {
       "lat": 40.674925,
@@ -252,6 +258,7 @@
     "photograph": "7.jpg",
     "srcset_index": "img/7-200.jpg 300w, img/7-500.jpg 768w, img/7.jpg 1280w",
     "srcset_restaurant": "img/7-200.jpg 300w, img/7-500.jpg 768w, img/7.jpg 1280w",
+    "alt": "Image of Superiority Burger restaurant",
     "address": "430 E 9th St, New York, NY 10009",
     "latlng": {
       "lat": 40.727397,
@@ -293,6 +300,7 @@
     "photograph": "8.jpg",
     "srcset_index": "img/8-200.jpg 300w, img/8-500.jpg 768w, img/8.jpg 1280w",
     "srcset_restaurant": "img/8-200.jpg 300w, img/8-500.jpg 768w, img/8.jpg 1280w",
+    "alt": "Image of The Dutch restaurant",
     "address": "131 Sullivan St, New York, NY 10012",
     "latlng": {
       "lat": 40.726584,
@@ -334,6 +342,7 @@
     "photograph": "9.jpg",
     "srcset_index": "img/9-200.jpg 300w, img/9-500.jpg 768w, img/9.jpg 1280w",
     "srcset_restaurant": "img/9-200.jpg 300w, img/9-500.jpg 768w, img/9.jpg 1280w",
+    "alt": "Image of Mu Ramen restaurant",
     "address": "1209 Jackson Ave, Queens, NY 11101",
     "latlng": {
       "lat": 40.743797,
@@ -375,6 +384,7 @@
     "photograph": "10.jpg",
     "srcset_index": "img/10-200.jpg 300w, img/10-500.jpg 768w, img/10.jpg 1280w",
     "srcset_restaurant": "img/10-200.jpg 300w, img/10-500.jpg 768w, img/10.jpg 1280w",
+    "alt": "Image of Casa Enrique restaurant",
     "address": "5-48 49th Ave, Queens, NY 11101",
     "latlng": {
       "lat": 40.743394,
